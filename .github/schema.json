@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://redhat.com/appstudio/hacbs/release/config.schema.json",
+  "title": "ReleaseStrategy Config",
+  "description": "A configuration file for a release strategy",
+  "type": "object",
+  "properties": {
+    "mapping": {
+      "description": "Array of components and pullspec to use to filter a snapshot",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string",
+            "pattern": "^(https?:\/\/)?(?:w{1,3}\\.)?[^\\s.]+(?:\\.[a-z]+)*(?::\\d+)?((?:\/\\w+)|(?:-\\w+))*\/?(?![^<]*(?:<\/\\w+>|\/?>))$"
+          },
+          "tag": {
+            "type": "string",
+            "pattern": "^[\\w][\\w.-]{0,127}$"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "component",
+          "repository"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}
