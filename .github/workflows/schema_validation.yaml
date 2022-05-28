@@ -1,0 +1,49 @@
+name: Schema validation
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  validate:
+    name: Validate changed files against JSON schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install yq
+        run: |
+          brew install yq
+      - name: Install jsonschema
+        run: |
+          python -m pip install jsonschema
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v21
+      - name: Validate against JSON schema
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ "$file" == ".github/"* ]] || [[ "$file" != *".yaml" ]]; then
+              continue
+            fi
+
+            echo -n "Validating file '$file'... "
+
+            # yq cannot be piped to pip's jsonschema, so I create a temp file
+            yq -o json "$file" > "$file".json
+            jsonschema -i "$file".json .github/schema.json 2> stderr.log || true
+            rm -rf "$file".json
+
+            if [ -s stderr.log ]; then
+              echo "ERROR"
+              cat stderr.log
+              rm stderr.log
+              exit 1
+            else
+              echo "OK"
+            fi
+          done
