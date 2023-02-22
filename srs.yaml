@@ -3,3 +3,4 @@ mapping:
   components:
     - name: apicurio-registry-qnbk
       repository: quay.io/hacbs-release-tests/apicurio-registry
+
