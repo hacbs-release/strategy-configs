@@ -1,0 +1,6 @@
+---
+mapping:
+  components:
+    - name: dc-metro-map
+      repository: quay.io/hacbs-release-tests/dcmetromap
+

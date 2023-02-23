@@ -1,0 +1,6 @@
+---
+mapping:
+  components:
+    - name: java-springboot
+      repository: quay.io/hacbs-release-tests/java-springboot
+
