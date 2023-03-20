@@ -1,6 +1,5 @@
 ---
 mapping:
   components:
-    - name: apicurio-registry-qnbk
+    - name: apicurio-registry-f36x
       repository: quay.io/hacbs-release-tests/apicurio-registry
-
