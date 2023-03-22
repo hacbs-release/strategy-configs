@@ -3,3 +3,7 @@ mapping:
   components:
     - name: apicurio-registry-f36x
       repository: quay.io/hacbs-release-tests/apicurio-registry
+    - name: apicurio-tenant-manager-20e6
+      repository: quay.io/hacbs-release-tests/apicurio-tenant-manager
+    - name: srs-fleet-manager-2thw
+      repository: quay.io/hacbs-release-tests/srs-fleet-manager
