@@ -1,0 +1,17 @@
+---
+mapping:
+  components:
+    - name: autotune-pxoo
+      repository: quay.io/hacbs-release-tests/autotune
+    - name: config-policy-controller-0pyc
+      repository: quay.io/hacbs-release-tests/config-policy-controller
+    - name: governance-policy-addon-controller-ocyz
+      repository: quay.io/hacbs-release-tests/governance-policy-addon-controller
+    - name: governance-policy-framework-addon-dfsa
+      repository: quay.io/hacbs-release-tests/governance-policy-framework-addon
+    - name: governance-policy-propagator-fm3n
+      repository: quay.io/hacbs-release-tests/governance-policy-propagator
+    - name: helloprow-go-8lmf
+      repository: quay.io/hacbs-release-tests/helloprow-go
+    - name: hypershift-azjx
+      repository: quay.io/hacbs-release-tests/hypershift
