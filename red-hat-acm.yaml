@@ -13,5 +13,5 @@ mapping:
       repository: quay.io/hacbs-release-tests/governance-policy-propagator
     - name: helloprow-go-8lmf
       repository: quay.io/hacbs-release-tests/helloprow-go
-    - name: hypershift-azjx
+    - name: hypershift-operator-main
       repository: quay.io/hacbs-release-tests/hypershift
