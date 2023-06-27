@@ -2,4 +2,4 @@
 mapping:
   components:
     - name: hypershift-operator-release-413
-      repository: quay.io/acm-d/
+      repository: quay.io/acm-d/rhtap-hypershift-operator
