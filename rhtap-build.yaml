@@ -1,5 +1,0 @@
----
-mapping:
-  components:
-    - name: image-controller
-      repository: quay.io/redhat-appstudio/image-controller
