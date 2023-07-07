@@ -1,5 +1,0 @@
----
-mapping:
-  components:
-    - name: external-secrets-controller
-      repository: quay.io/redhat-appstudio/external-secrets
