@@ -1,0 +1,6 @@
+---
+mapping:
+  components:
+    - name: fileupdatestest-component
+      repository: quay.io/hacbs-release-tests/fileupdatestest-component
+
