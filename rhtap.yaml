@@ -5,3 +5,5 @@ mapping:
       repository: quay.io/redhat-appstudio/image-controller
     - name: external-secrets-controller
       repository: quay.io/redhat-appstudio/external-secrets-controller
+    - name: segment-bridge
+      repository: quay.io/redhat-appstudio/segment-bridge
