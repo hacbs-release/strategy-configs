@@ -7,3 +7,5 @@ mapping:
       repository: quay.io/redhat-appstudio/external-secrets-controller
     - name: segment-bridge
       repository: quay.io/redhat-appstudio/segment-bridge
+    - name: release-service
+      repository: quay.io/redhat-appstudio/release-service
