@@ -11,3 +11,5 @@ mapping:
       repository: quay.io/rhtap-managed-services/assisted-installer-assisted-service
     - name: prow-jobs-scraper-xg3v
       repository: quay.io/rhtap-managed-services/assisted-installer-prow-jobs-scraper
+    - name: cicd-tools
+      repository: quay.io/rhtap-managed-services/rhtap-migration-bonfire-cicd-tools
