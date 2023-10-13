@@ -9,3 +9,5 @@ mapping:
       repository: quay.io/redhat-appstudio/segment-bridge
     - name: release-service
       repository: quay.io/redhat-appstudio/release-service
+    - name: release-service-utils
+      repository: quay.io/redhat-appstudio/release-service-utils
