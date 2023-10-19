@@ -13,3 +13,5 @@ mapping:
       repository: quay.io/rhtap-managed-services/assisted-installer-prow-jobs-scraper
     - name: cicd-tools
       repository: quay.io/rhtap-managed-services/rhtap-migration-bonfire-cicd-tools
+    - name: trusted-content-trustification
+      repository: quay.io/redhat-user-workloads/trusted-content-tenant/trustification/trustification-service
